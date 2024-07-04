@@ -4,7 +4,8 @@ This repository gives an example of how to extend [Flask-Dance](https://github.c
 to handle URL redirects when doing the OAuth2 dance for you.
 
 First, you'll need to get API credentials for ORCID at https://orcid.org/developer-tools
-and set up a redirect for https://0.0.0.0:8775/login/orcid/authorized.
+and set up a redirect for https://0.0.0.0:8775/login/orcid/authorized. You can swap
+out many different OAuth2 sources by using Flask-Dance - ORCID is just for demo purposes.
 
 Second, you'll need to clone the repository, install requirements, and create
 security credentials to get your local server to (begrudgingly) run HTTPS:
