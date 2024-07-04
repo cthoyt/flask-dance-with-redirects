@@ -107,7 +107,10 @@ def view_home():
     # Check if a redirect has been stored in the session,
     #  e.g., from before doing the OAuth dance. If found, redirect.
     #  This is implemented in the home endpoint "/" since that's the default
-    #  redirect from the Flask-Dance OAuth2 class
+    #  redirect from the Flask-Dance OAuth2 class.
+    #
+    # An alternative to having this code in the home endpoint is described in
+    # https://flask-dance.readthedocs.io/en/latest/understanding-the-magic.html#finishing-the-dance
     if next_url := flask.session.pop("next_url", None):
         return redirect(next_url)
 
