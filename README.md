@@ -17,7 +17,6 @@ security credentials to get your local server to (begrudgingly) run HTTPS:
 ```shell
 git clone https://github.com/cthoyt/flask-dance-with-redirects.git
 cd flask-dance-with-redirects
-python -m pip install -r requirements.txt
 
 # needed to make appropriate security credentials
 brew install mkcert
@@ -25,7 +24,7 @@ brew install nss
 mkcert localhost 127.0.0.1 ::1
 mkcert -install
 
-python app.py
+uv run app.py
 ```
 
 Finally, navigate to https://0.0.0.0:8775 to see the dance.

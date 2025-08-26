@@ -1,3 +1,14 @@
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "asgiref",
+#     "flask",
+#     "flask-dance",
+#     "pystow",
+#     "uvicorn",
+# ]
+# ///
+
 """
 This is a full demo that shows how to set up Flask-Dance
 to properly run redirects after OAuth2 authentication

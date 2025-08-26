@@ -1,5 +1,0 @@
-pystow
-flask
-flask-dance
-uvicorn
-asgiref
